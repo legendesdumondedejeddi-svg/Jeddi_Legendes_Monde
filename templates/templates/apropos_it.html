@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Informazioni — Leggende del Mondo di Jeddi</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+  <img src="{{ url_for('static', filename='licorne.png') }}" alt="Bannière Licorne" class="header-banner">
+  <nav>
+    <a href="/it/accueil">Home</a>
+    <a href="/it/jeddi">Jeddi</a>
+    <a href="/it/about">Informazioni</a>
+    <a href="/it/galerie">Galleria</a>
+    <a href="/it/legendes">Leggende</a>
+    <a href="/it/don">Donazioni</a>
+    <div class="dropdown">
+      <button class="dropbtn">Lingua</button>
+      <div class="dropdown-content">
+        <a href="/fr/accueil">FR</a>
+        <a href="/en/accueil">EN</a>
+        <a href="/it/accueil">IT</a>
+        <a href="/de/accueil">DE</a>
+        <a href="/es/accueil">ES</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>Chi siamo</h1>
+  <p>Leggende del Mondo di Jeddi è un progetto che raccoglie, traduce e rinnova racconti antichi e nuovi.</p>
+
+  <p>Le fonti possono venire da biblioteche, archivi digitali e tradizioni orali: il nostro lavoro è dare loro nuova voce, in più lingue.</p>
+
+  <h3>Missione</h3>
+  <p>Offrire un luogo dove la creatività può circolare liberamente — leggere, scrivere, contribuire.</p>
+</main>
+
+<footer>
+  <p>© 2025 Légendes du Monde de Jeddi</p>
+  <img src="{{ url_for('static', filename='licorne.gif') }}" alt="Licorne qui galope" class="footer-gif">
+</footer>
+</body>
+</html>
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>🕯️ Informazioni su Leggende del Mondo di Jeddi</h1>
+
+<p>
+Leggende del Mondo di Jeddi è molto più di un universo immaginario; è un mondo vivo, nato dalla passione, dalla creatività e dal desiderio di raccontare insieme.  
+Qui ogni luogo, ogni storia e ogni personaggio porta con sé un frammento di anima.
+</p>
+
+<p>
+Il mondo di Jeddi è in continua evoluzione, modellato da chi vi partecipa: scrittori, sognatori, esploratori, creatori di mondi.  
+Ognuno porta la propria pietra, il proprio respiro, la propria luce, e da questo incontro nascono nuove leggende.
+</p>
+
+<p>
+La nostra missione è costruire uno spazio in cui l’immaginazione diventi un terreno di gioco condiviso.  
+Un luogo dove la creatività è incoraggiata, dove la comunità si riunisce attorno al piacere di creare e dove la condivisione di idee e storie unisce le menti.
+</p>
+
+<p>
+Qui la libertà creativa è essenziale: ognuno può inventare, sognare e tracciare il proprio cammino, limitato solo dalla propria immaginazione.  
+Che tu venga per leggere, scrivere, giocare o semplicemente per sognare, Jeddi ti apre le sue porte.
+</p>
+
+<p>
+Qui i confini tra realtà e mito si assottigliano un po’…  
+E forse, tra due pagine o lungo un sentiero nascosto, scoprirai la leggenda che porti dentro.
+</p>
+
+<p>
+🌙 Benvenuto in Leggende del Mondo di Jeddi, un mondo da sognare, creare e vivere.
+</p>
+
+<p>
+Le leggende raccolte qui provengono da antiche opere, biblioteche affascinanti o manoscritti dimenticati.  
+Le restauriamo e le rendiamo accessibili in diverse lingue per offrire uno spazio in cui l’immaginazione unisce le persone.
+</p>
+
+<p><em>Le tue parole, la tua storia… tutto può vivere qui.</em></p>
+
+{% endblock %}

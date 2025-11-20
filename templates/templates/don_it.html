@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Sostenere il Progetto{% endblock %}
+{% block content %}
+<h1>Sostenere il progetto</h1>
+
+<p>
+Questo sito è un lavoro di preservazione e condivisione di racconti del passato. Il tuo aiuto permette di mantenere vive queste raccolte.
+</p>
+
+<p>
+Le donazioni sono essenziali per garantire la continuità e la qualità del nostro lavoro. Molte risorse fondamentali —tra cui testi accessibili solo tramite abbonamento alla BnF, l’accesso a banche dati online o ad archivi digitalizzati— richiedono costi regolari. A questi si aggiungono le spese di revisione e traduzione, svolte da specialisti di antico francese e di varietà linguistiche provenienti dalle ex colonie francesi, competenze indispensabili per restituire fedelmente i documenti d’epoca.
+</p>
+
+<p>
+Le donazioni permettono anche l’acquisto o il noleggio di libri rari o fuori catalogo, indispensabili per realizzare ricerche complete e rigorose. Grazie al tuo sostegno, possiamo continuare a preservare, studiare e rendere accessibile un patrimonio letterario e storico spesso difficile da consultare. Ogni contributo, anche modesto, rafforza la continuità di questo lavoro e contribuisce direttamente alla diffusione di conoscenze preziose.
+</p>
+
+<form action="https://www.paypal.com/donate" method="post" target="_blank">
+  <input type="hidden" name="business" value="patrick.letoffet@gmail.com">
+  <input type="hidden" name="currency_code" value="EUR">
+  <button type="submit">Dona tramite PayPal</button>
+</form>
+
+<p><small>I tuoi dati PayPal rimangono privati.</small></p>
+{% endblock %}
